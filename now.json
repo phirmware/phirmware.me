@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "app.js",
-        "use": "@now/node"
+        "use": "@now/node-builder"
       },
       {
         "src": "/views/index.html",
