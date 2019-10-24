@@ -1,18 +1,17 @@
 {
-	"version": 2,
-	"builds": [
-		{ "src": "app.js", "use": "@now/node-server" },
-		{
-			"src": "views/**/**/*",
-			"use": "@now/static"
-		},
-		{ "src": "!*.js", "use": "@now/static" }
-	],
-	"routes": [
-		{
-			"src": "/",
-			"dest": "/app.js",
-			"methods": ["GET"]
-		}
-	]
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@now/node"
+      },
+      {
+        "src": "/views/index.html",
+        "use": "@now/static"
+      },
+      {
+        "src": "/views/*",
+        "use": "@now/static"
+      }
+    ]
+  }
