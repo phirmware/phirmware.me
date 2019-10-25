@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  node1:
+    image: portfolio
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/var/www"
+
+  node2:
+    image: portfolio
+    ports:
+      - "3001:3000"
+    volumes:
+      - ".:/var/www"
